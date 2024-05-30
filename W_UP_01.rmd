@@ -41,9 +41,27 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 
 <!--Graphical results here. Make sure to show your code. Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too. Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+boxplot(pushups~position,data=mydata)
+```
+  
+
+The skill players are doing a lot more pushups than the line players. The way I can see it is in the median (the big black lines in the middle of the boxes), the line players about 15 pushups wheras the skill players average about 50. 
+
+
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+
+
+
+```{r}
+favstats(pushups~position,data=mydata)
+```
+
+The skill players, on average, are doing three times more pushups than the line players. The first quadrant of the skill player was 31.25. The third quadrant of the line players was 24.25. If I compare it with the first quadrant of the skill players, it is smaller.  
 
 ## Inferential Results
 
